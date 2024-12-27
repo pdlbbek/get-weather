@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City not found!!</title>
+    <link href="{{url_for('static', filename = 'styles/style.css')}}" rel="stylesheet" />
+</head>
+
+
+<body>
+    <h1>City not found!!</h1>
+    <h2>Try again?</h2>
+
+    <form action="/weather" method="get">
+        <input type="text" name="city" id="city" placeholder="Enter a City" required />
+
+
+
+        <label for="country"> Select your Country (OPTIONAL): </label>
+
+        <select name="country" id="country">
+
+            <option value="NA">Country Not Listed</option>
+            <option value="CA">Canada</option>
+            <option value="US" selected>United States of America</option>
+
+        </select>
+
+        <label for="state">ONLY if you have selected your country: </label>
+        <input type="text" name="state" id="state" placeholder="Enter the State" />
+
+
+
+        <div>
+            <label for="unit_celsius">Celsius</label>
+            <input type="radio" id="unit_celsius" name="unit" value="metric" checked>
+            <label for="unit_fahrenheit">Fahrenheit</label>
+            <input type="radio" id="unit_fahrenheit" name="unit" value="imperial">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

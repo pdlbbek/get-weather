@@ -5,7 +5,7 @@ from pprint import pprint
 
 load_dotenv()
 
-def get_current_weather(city="Lynnwood", unit="imperial", state='WA', country='US'):
+def get_current_weather(city="San Marcos", unit="imperial", state='TX', country='US'):
     """
     Get current weather data from OpenWeatherMap API.
     

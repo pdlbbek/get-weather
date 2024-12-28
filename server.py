@@ -20,7 +20,7 @@ def get_weather():
     unit = request.args.get('unit', 'imperial')  # Default to Fahrenheit if no unit is provided
 
     if not bool(city.strip()):
-        city = "Lynnwood"  # Default city if input is empty
+        city = "San Macos"  # Default city if input is empty
 
     try:
         weather_data = get_current_weather(city, unit, state, country)
